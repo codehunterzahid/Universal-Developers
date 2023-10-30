@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.home{
+    background-color: rgb(25, 25, 25);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
+    height: 99vh;
+}
+
+.logo{
+    width: 90px;
+    height: auto;
+}
+.navbar-brand{
+    padding-right: 15%;
+}
+
+.active:active{
+    color: #FEA116;
+}
+
+.active:hover{
+    color: black;
+    background-color: #FEA116;
+    border-radius: 30px;
+}
+
+.nav-link:hover{
+    background-color: gray;
+    color: black;
+    border-radius: 50px;
+}
