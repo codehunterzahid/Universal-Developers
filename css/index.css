@@ -3,11 +3,19 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .home{
     background-color: rgb(25, 25, 25);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
     height: 99vh;
+    z-index: -10;
+    /* position: relative; */
 }
+
+
 
 .logo{
     width: 90px;
@@ -23,12 +31,33 @@
 
 .active:hover{
     color: black;
-    background-color: #FEA116;
+    background-color: green;
     border-radius: 30px;
 }
 
-.nav-link:hover{
-    background-color: gray;
+.nav-link:hover:not(.active){
+    background-color: #0b778dd3;
     color: black;
     border-radius: 50px;
+}
+
+.hero{
+    z-index: 100;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+
+.content{
+    width: 60%;
+    height: 50vh;
+    background-color: red;
+    border-radius: 20px;
+    transform: rotate(75deg);
+}
+
+.hero-btn{
+    border-radius: 100px;
+    padding: 100px;
 }
