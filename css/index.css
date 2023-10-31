@@ -5,6 +5,7 @@
 
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .home{
@@ -121,8 +122,9 @@ body{
 
 /* explore section  */
 .explore{
+    background-color: #F7F9FC;
     width: 100%;
-    height: 60vh;
+    height: 40vh;
 }
 
 .e-text{
@@ -134,7 +136,8 @@ body{
     font-size: 30px;
 }
 .e-text h1 span{
-    border: 20px solid #44b5aa;
+    border: 15px solid #44b5aa;
+    margin-left: 30px;
     padding: 5px;
     border-radius: 30px;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
@@ -150,6 +153,9 @@ body{
 }
 
 @media screen and (max-width: 400px){
+    .explore{
+        height: 70vh;
+    }
     .explore-row{
         display: flex;
         flex-direction: column;
@@ -178,6 +184,9 @@ body{
 }
 
 @media (min-width: 400px) and (max-width: 550px){
+    .explore{
+        height: 60vh;
+    }
     .explore-row{
         display: flex;
         flex-direction: column;
@@ -188,9 +197,6 @@ body{
     .e-text h1, .e-text p, .e-btn{
         align-items: center;
         text-align: center;
-    }
-    .e-text h1 span{
-        display: none;
     }
 
     .e-card{
@@ -205,6 +211,9 @@ body{
 }
 
 @media (min-width: 550px) and (max-width: 800px){
+    .explore{
+        height: 50vh;
+    }
     .explore-row{
         display: flex;
         flex-direction: column;
@@ -216,9 +225,7 @@ body{
         align-items: center;
         text-align: center;
     }
-    .e-text h1 span{
-        display: none;
-    }
+    
 
     .e-card{
         width: 100%;
@@ -229,5 +236,79 @@ body{
         position: absolute;
         top: 50%;
         left: 20%;
+    }
+}
+
+
+/* tools section is starting from here  */
+.tools{
+    width: 100%;
+    height: 100vh;
+    background-color: #D8F0E1;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+}
+
+.t-container{
+    display: flex;
+    flex-direction: row;
+    padding: 15% 0 0 8%;
+}
+.t-1{
+    width: 50%;
+    height: 55vh;
+    margin-right: 10px;
+}
+.t-1 p, .t-2 p{
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+
+.t-2{
+    padding-left: 5%;
+    width: 50%;
+    height: 55vh;
+    margin-left: 10px;
+    background-color: rgba(247, 249, 252, 0.611);
+}
+
+@media screen and (max-width: 400px){
+    .tools{
+        height: 150vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        margin-top: 15%;
+    }
+    .t-container{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .t-1, .t-2{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .t-2{
+        margin-top: 20%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 786px){
+    .tools{
+        height: 125vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        margin-top: 15%;
+    }
+    .t-container{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .t-1, .t-2{
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 }
