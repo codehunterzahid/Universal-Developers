@@ -10,7 +10,8 @@ body{
 .home{
     background-color: rgb(25, 25, 25);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
-    height: 99vh;
+    width: 100%;
+    height: 100vh;
     z-index: -10;
     /* position: relative; */
 }
@@ -45,19 +46,98 @@ body{
     z-index: 100;
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: 5%;
 }
 
 
-.content{
-    width: 60%;
-    height: 50vh;
-    background-color: red;
+
+.hero-img{
+    width: 65%;
+    height: 45vh;
     border-radius: 20px;
-    transform: rotate(75deg);
+    margin-left: 15%;
+    transform: rotate(-10deg);
+}
+
+
+@keyframes fade {
+
+    
+}
+
+
+
+.hero-text{
+    margin-right: 5%;
 }
 
 .hero-btn{
     border-radius: 100px;
     padding: 100px;
+}
+
+@media screen and (max-width: 400px){
+    .content{
+        display: none;
+    }
+    .navbar-brand{
+        display: none;
+    }
+
+    .hero-text h1{
+        font-size: 35px;
+        margin-top: -40%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 550px){
+    .content{
+        display: none;
+    }
+    .navbar-brand{
+        display: none;
+    }
+
+    .hero-text h1{
+        font-size: 35px;
+        margin-top: -28%;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 786px){
+    .content{
+        display: none;
+    }
+    .navbar-brand{
+        display: none;
+    }
+
+    .hero-text h1{
+        margin: auto;
+        font-size: 35px;
+        margin-top: -20%;
+    }
+}
+
+/* explore section  */
+.explore{
+    width: 100%;
+    height: 40vh;
+}
+
+.e-text h1{
+    color: #2C9C90;
+    font-size: 30px;
+}
+.e-text h1 span{
+    border: 20px solid #44b5aa;
+    padding: 5px;
+    border-radius: 30px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+
+
+.e-card{
+    background-color: green;
 }
