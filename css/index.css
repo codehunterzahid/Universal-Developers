@@ -275,23 +275,28 @@ body{
 
 @media screen and (max-width: 400px){
     .tools{
-        height: 150vh;
+        height: 100vh;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        margin-top: 15%;
+        margin-top: 5%;
     }
     .t-container{
         display: flex;
         flex-direction: column;
-        padding: 5%;
+        padding: 5% 5% 0 5%;
     }
+    
     .t-1, .t-2{
-        width: 100%;
+        width: 80%;
         padding: 0;
         margin: 0;
     }
+    .t-1{
+        width: 100%;
+        height: 62vh;
+    }
     .t-2{
-        margin-top: 20%;
-        height: 70%;
+        width: 100%;
+        height: 70vh;
     }
 }
 
