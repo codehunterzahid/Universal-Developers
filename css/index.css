@@ -136,11 +136,8 @@ body{
     font-size: 30px;
 }
 .e-text h1 span{
-    border: 15px solid #44b5aa;
     margin-left: 30px;
     padding: 5px;
-    border-radius: 30px;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
 .e-p{
@@ -315,5 +312,259 @@ body{
         width: 100%;
         padding: 0;
         margin: 0;
+    }
+}
+
+/* styling product section */
+.product{
+    width: 100%;
+    height: 200vh;
+    padding-top: 5%;
+    /* background-color: #2C9C90; */
+    z-index: -10;
+}
+
+.p-text{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.p-text p{
+    font-size: 20px;
+}
+
+.p-text button{
+    padding: 15px 30px;
+    font-weight: bold;
+}
+
+.p-logo{
+    padding-left: 7%;
+    height: 35vh;
+}
+
+.tool-img{
+    width: 8%;
+    margin-right: 5.9%;
+    margin-top: 5%;
+}
+
+.inter-img{
+    width: 80%;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 400px){
+    .product{
+        width: 100%;
+        height: 120vh;
+    }
+    .p-text{
+        width: 100%;
+    }
+    .p-text h1, .p-text p{
+        font-size: 15px;
+    }
+    .p-logo{
+        padding-left: 10%;
+        padding-top: 5%;
+        height: 15vh;
+    }
+    .tool-img{
+        width: 10%;
+        margin-right: 1.5%;
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px){
+    .product{
+        width: 100%;
+        height: 150vh;
+    }
+    .p-text{
+        width: 100%;
+    }
+    .p-text h1, .p-text p{
+        font-size: 20px;
+    }
+    .p-logo{
+        padding-left: 10%;
+        padding-top: 5%;
+        height: 25vh;
+    }
+    .tool-img{
+        width: 10%;
+        margin-right: 1.5%;
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    .product{
+        width: 100%;
+        height: 170vh;
+    }
+    .p-text{
+        width: 100%;
+    }
+    .p-text h1, .p-text p{
+        font-size: 20px;
+    }
+    .p-logo{
+        padding-left: 10%;
+        padding-top: 5%;
+        height: 35vh;
+    }
+    .tool-img{
+        width: 10%;
+        margin-right: 1.5%;
+        margin-top: 5%;
+    }
+}
+
+
+/* developer section */
+.developer{
+    width: 100vw;
+    height: 130vh;
+    background-color: #F7F9FC;
+    padding-top: 3%;
+}
+.d-text{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.d-text i{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.d-text p{
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.d-content{
+    display: none;
+}
+.d-text2 p{
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+
+.d-img{
+    width: 95%;
+    margin-left: 10%;
+}
+
+.d-logo{
+    padding-top: 5%;
+}
+.dev-img{
+    width: 12%;
+}
+
+@media screen and (max-width: 400px){
+    .developer{
+        width: 100vw;
+        height: 260vh;
+    }
+    .container-large{
+        display: none;
+    }
+
+    .d-text{
+        width: 100vw;
+        padding: 5%;
+    }
+    .d-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .d-text2, .d-carousel{
+        width: 100%;
+        padding: 5%;
+    }
+    .d-img{
+        width: 100%;
+        margin: 0;
+    }
+    .dev-img{
+        width: 30%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px){
+    .developer{
+        width: 100vw;
+        height: 300vh;
+    }
+    .container-large{
+        display: none;
+    }
+
+    .d-text{
+        width: 100vw;
+        padding: 5%;
+    }
+    .d-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .d-text2, .d-carousel{
+        width: 100%;
+        padding: 10%;
+    }
+
+    .d-logo{
+        margin: 10%;
+        margin-top: 0;
+    }
+    .d-img{
+        width: 100%;
+        margin: 0;
+    }
+    .dev-img{
+        width: 30%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    .developer{
+        width: 100vw;
+        height: 330vh;
+    }
+    .container-large{
+        display: none;
+    }
+
+    .d-text{
+        width: 100vw;
+        padding: 5%;
+    }
+    .d-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .d-text2, .d-carousel{
+        width: 100%;
+        padding: 10%;
+    }
+
+    .d-logo{
+        margin: 10%;
+        margin-top: 0;
+    }
+    .d-img{
+        width: 100%;
+        margin: 0;
+    }
+    .dev-img{
+        width: 30%;
     }
 }
