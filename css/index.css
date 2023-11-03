@@ -61,10 +61,6 @@ body{
 }
 
 
-@keyframes fade {
-
-    
-}
 
 
 
@@ -155,7 +151,7 @@ body{
 
 @media screen and (max-width: 400px){
     .explore{
-        height: 70vh;
+        height: 45vh;
     }
     .explore-row{
         display: flex;
@@ -179,7 +175,7 @@ body{
     }
     .e-img{
         position: absolute;
-        top: 70%;
+        top: 67%;
         left: 15%;
     }
 }
@@ -276,7 +272,7 @@ body{
 
 @media screen and (max-width: 400px){
     .tools{
-        height: 100vh;
+        height: 80vh;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         margin-top: 5%;
     }
@@ -293,11 +289,11 @@ body{
     }
     .t-1{
         width: 100%;
-        height: 62vh;
+        height: 50vh;
     }
     .t-2{
         width: 100%;
-        height: 70vh;
+        height: 45vh;
     }
 }
 
@@ -362,7 +358,7 @@ body{
 @media screen and (max-width: 400px){
     .product{
         width: 100%;
-        height: 120vh;
+        height: 90vh;
     }
     .p-text{
         width: 100%;
@@ -476,7 +472,7 @@ body{
 @media screen and (max-width: 400px){
     .developer{
         width: 100vw;
-        height: 260vh;
+        height: 180vh;
     }
     .container-large{
         display: none;
