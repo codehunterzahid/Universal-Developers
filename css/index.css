@@ -39,7 +39,7 @@ body{
 
 
 .nav-link:hover:not(.active){
-    background-color: black;
+    background-color: #31D2F2;
     border-radius: 50px;
 }
 
